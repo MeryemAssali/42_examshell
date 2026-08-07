@@ -1,5 +1,5 @@
 
-unsigned int cgd(unsigned int n1, unsigned int n2)
+unsigned int gcd(unsigned int n1, unsigned int n2)
 {
     int tmp;
 
@@ -14,9 +14,7 @@ unsigned int cgd(unsigned int n1, unsigned int n2)
 
 unsigned int    lcm(unsigned int a, unsigned int b)
 {
-    unsigned int lcm;
-
     if (!a || !b)
         return (0);
-    return (a * b / cgd(a, b));
+    return (a * b / gcd(a, b));
 }
